@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html>
+<head><!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>Lacerta Panel</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<!-- http://fontello.com/ -->
+	    <link rel="stylesheet" href="css/font-icons/icons-font.css">
+ 	<!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-icons/icons-font-ie7.css"><![endif]-->
+    <script src="js/jquery.js"></script>
+    <script src="js/lacerta.js"></script>
+	<meta charset="UTF-8" />
+ </head>
+<body>
+<!-- header bar -->	
+<header class="top_bar">
+	<h1 class="logo">Lacerta</h1>
+	<nav>
+		<a class="current" href="#home"><i class="icon-home"></i>Home</a>
+		<a href="#1"><i class="icon-right-open"></i>Menu 1</a>
+		<a href="#2"><i class="icon-right-open"></i>Menu 2</a>
+		<a href="#3"><i class="icon-right-open"></i>Menu 3</a>
+	</nav>
+	<div class="user_wrap">
+		<a href=""><i class="icon-user-2"></i> Nightbringer</a>
+		<a href="login.html"><i class="icon-logout"></i> déconnexion</a>
+	</div>
+</header>
+<!-- <div class="header-fix"></div> We can remove this block, but if you do that, add a padding-top: 40px to the body element -->
+
+<!-- notification center -->
+<div id="notification_center">
+	<ul>
+		<li class="notif-warning"><a href="#"><i class="icon-attention-1"></i></a></li>
+		<li class="notif-danger"><a href="#"><i class="icon-cancel-circle"></i></a></li>
+		<li class="notif-success"><a href="#"><i class="icon-ok-circle"></i></a></li>
+		<li class="notif-info"><a href="#"><i class="icon-bell-1"></i></a></li>
+		<li><a href="#"><i class="icon-cog-1"></i></a></li>
+	</ul>
+</div>
+
+<div class="container-fluid">
+<section class="block grid5">
+	<div class="title">
+		Text, unordered list and button
+		<a class="toggle_block" href="#"><i class="icon-up-circle"></i></a>
+	</div>
+	<div class="content">
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+			<ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Cras nec lectus egestas purus vehicula faucibus sit amet sit amet nunc.</li>
+                <li>Cras vel elit nec eros ullamcorper pretium in vel libero.</li>
+            </ul>
+
+            <a href="#" class="btn">This is a button</a>
+            <a href="#" class="btn-blue">This is a button</a>
+            <a href="#" class="btn-green"><i class="icon-firefox"></i> This is a button</a>
+            <a href="#" class="btn-yellow">This is a button</a>
+            <a href="#" class="btn-red"><i class="icon-cancel"></i> This is a button</a>
+            <a href="#" class="btn-black">This is a button</a>
+			<br />
+            <a href="#" class="btn-blue btn-bordered">This is a button</a>
+		</span>
+	</div>
+</section>
+<section class="block grid4">
+	<div class="title">
+		Text, strong, ordered list, social btn<a class="toggle_block" href="#"><i class="icon-up-circle"></i></a>
+	</div>
+	<div class="content">
+		<span><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in <strong>voluptate</strong> velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+			<ol>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Cras nec lectus egestas purus.</li>
+                <li>Cras vel elit nec eros ullamcorper pretium in vel libero.</li>
+            </ol>
+             <br />
+            <a class="btn-round" href=""><i class="icon-facebook"></i> </a>
+			<a class="btn-round" href=""><i class="icon-twitter"></i> </a>
+			<a class="btn-round" href=""><i class="icon-rss-1"></i> </a>
+			<a class="btn-round" href=""><i class="icon-grooveshark"></i> </a>
+		</span>
+	</div>
+</section>
+<section class="block grid3">
+	<div class="title">
+		Title<a class="toggle_block" href="#"><i class="icon-up-circle"></i></a>
+	</div>
+	<div class="content">
+		<span>
+			<h1>Title 1</h1>
+			<h2>Title 2</h2>
+			<h3>Title 3</h3>
+			<h4>Title 4</h4>
+			<h5>Title 5</h5>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</span>
+	</div>
+</section>
+
+<section class="block grid12">
+	<div class="title">
+		Form, smiley<a class="toggle_block" href="#"><i class="icon-up-circle"></i></a>
+	</div>
+	<div class="content">
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<br />
+
+		<i class="icon-emo-happy"></i> 
+		<i class="icon-emo-wink"></i> 
+		<i class="icon-emo-unhappy"></i> 
+		<i class="icon-emo-sleep"></i> 
+		<i class="icon-emo-thumbsup"></i> 
+		<i class="icon-emo-devil"></i> 
+		<i class="icon-emo-surprised"></i> 
+		<i class="icon-emo-tongue"></i> 
+		<i class="icon-emo-coffee"></i> 
+		<i class="icon-emo-sunglasses"></i> 
+		<i class="icon-emo-displeased"></i> 
+		<i class="icon-emo-beer"></i> 
+		<i class="icon-emo-grin"></i> 
+		<i class="icon-emo-angry"></i> 
+		<i class="icon-emo-saint"></i> 
+		<i class="icon-emo-cry"></i> 
+		<i class="icon-emo-shoot"></i> 
+		<i class="icon-emo-squint"></i> 
+		<i class="icon-emo-laugh"></i> 
+		<i class="icon-emo-wink2"></i> 
+
+		<br />
+		<div><label for="title">Title: </label><input type="text" id="title" name="title"></div>
+		<div><label for="severity">Severity</label><select id="severity" name="severity">
+			<option value="1">Critical</option>
+			<option value="2">Major</option>
+			<option value="3">Medium</option>
+			<option value="4">Minor</option>
+			<option value="5">Usability</option>
+			<option value="6">Req.En.</option>
+			<option value="7">Req.En.Required</option>
+			<option value="8">Req.En.High Desire</option>
+			<option value="9">Req.En.Desirable</option>
+			<option value="10">Req.En.Nice</option>
+			<option value="11">New Development</option>
+			</select>
+		</div>
+		<div><label for="content">Description: </label><textarea id="content" name="content"></textarea></div>
+		<label class="checkbox" for="show_stopper">
+		<input type="checkbox" id="show_stopper" value="1" checked="checked" name="show_stopper">Must fix</label>
+
+	</span>
+	</div>
+</section>
+
+<section class="block grid12">
+	<div class="title">
+		Table, pagination<a class="toggle_block" href="#"><i class="icon-up-circle"></i></a>
+	</div>
+	<div class="content">
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<table class="table table-hover table-bordered table-condensed">
+	<tbody><tr>
+			<th><a href="/DefectDataBase/defects/index/sort:id/direction:asc">Id</a></th>
+			<th><a href="/DefectDataBase/defects/index/sort:status_title/direction:asc">Status</a></th>		<th><a href="/DefectDataBase/defects/index/sort:severity_title/direction:asc">Severity</a></th>		<th><a href="/DefectDataBase/defects/index/sort:assigned_username/direction:asc">Assigned to</a></th>		<th><a href="/DefectDataBase/defects/index/sort:project_title/direction:asc">Project</a></th>		<th><a href="/DefectDataBase/defects/index/sort:version_title/direction:asc">Version</a></th>		<th><a href="/DefectDataBase/defects/index/sort:title/direction:asc">Title</a></th>		
+		<th><a href="/DefectDataBase/defects/index/sort:location_title/direction:asc">Area</a></th>		<th><a href="/DefectDataBase/defects/index/sort:found_username/direction:asc">Found by</a></th>		<th><a href="/DefectDataBase/defects/index/sort:found_in_build/direction:asc">Found In Build</a></th>		<th><a href="/DefectDataBase/defects/index/sort:fixed_in_build/direction:asc">Fixed In Build</a></th>		<th><a href="/DefectDataBase/defects/index/sort:show_stopper/direction:asc">Must Fix</a></th>		<th class="actions">Follow</th>
+			<th class="actions">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	</tr>
+		<tr class="info">
+
+		<!-- ID -->
+		<td>14825&nbsp;
+		</td>
+
+		<!-- Status -->
+				<td>
+			New&nbsp;
+		</td>
+		
+		<!-- Severity -->
+				<td>
+			Critical&nbsp;
+		</td>
+		
+		<!-- Assigned user -->
+				<td>
+			Alex K&nbsp;
+		</td>
+		
+		<!-- Project -->
+				<td>
+			<a data-original-title="Version: 5.0 Build: deee" rel="tooltip" data-placement="top" href="/DefectDataBase/projects/view/18">Alice</a>&nbsp;
+		</td>
+		
+		<!-- Version -->
+				<td>
+			<a data-original-title="Project: Alice Build: deee" rel="tooltip" data-placement="top" href="/DefectDataBase/versions/view/114">5.0</a>&nbsp;
+		</td>
+		
+		<!-- Title -->
+				<td class="td_title">
+			<a data-content="1. General Description
+
+
+2. Steps to reprod
+uce" data-original-title="Defect #14825" rel="popovertitle" data-placement="left" href="/DefectDataBase/defects/view/14825">dede</a>			&nbsp;
+
+		</td>
+				
+		<!-- Location/Area -->
+				<td>
+			About&nbsp;
+		</td>
+		
+		<!-- Found by user -->
+				<td>
+			Titouan Benoit&nbsp;
+		</td>
+		
+		<!-- Found in build -->
+				<td>
+			deee&nbsp;
+		</td>
+		
+		<!-- Fixed in build -->
+				<td>
+			&nbsp;
+		</td>
+		
+		<!-- Must fix -->
+				<td><div class="center_td"><i class="icon-asterisk"></i> <span class="mustFix">X</span></div>&nbsp;</td>
+		
+		<!-- follow -->
+		<td class="tdactions"><div class="center_td"><a data-url="/DefectDataBase/follows" data-defect="14825" data-user="91" data-id="" alt="follow" title="follow" class="follow_off"></a>
+			
+			
+		</div></td>
+
+		<!-- Actions -->
+				<td class="tdactions">
+			<a data-content="&lt;ul class=&quot;count_misc&quot;&gt;&lt;li&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-file&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-linked-black&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;/ul&gt;Created: 2013-03-07 16:26:08&lt;br /&gt;Modified: 2013-03-07 16:26:08&lt;br /&gt;Fix Confirmed: " data-original-title="Defect #14825" rel="popoverview" data-placement="left" class="btn btn-mini" href="/DefectDataBase/defects/view/14825">View</a>			<a class="btn btn-mini btn-primary" href="/DefectDataBase/defects/update/14825">Update</a>					</td>
+	</tr>
+	<tr class="info">
+
+		<!-- ID -->
+		<td>14824&nbsp;
+		</td>
+
+		<!-- Status -->
+				<td>
+			New&nbsp;
+		</td>
+		
+		<!-- Severity -->
+				<td>
+			Critical&nbsp;
+		</td>
+		
+		<!-- Assigned user -->
+				<td>
+			Alex K&nbsp;
+		</td>
+		
+		<!-- Project -->
+				<td>
+			<a data-original-title="Version: 5.0 Build: dede" rel="tooltip" data-placement="top" href="/DefectDataBase/projects/view/29">Alice Browser Client</a>&nbsp;
+		</td>
+		
+		<!-- Version -->
+				<td>
+			<a data-original-title="Project: Alice Browser Client Build: dede" rel="tooltip" data-placement="top" href="/DefectDataBase/versions/view/134">5.0</a>&nbsp;
+		</td>
+		
+		<!-- Title -->
+				<td class="td_title">
+			<a data-content="1. General Description
+
+
+2. Steps to reproduce" data-original-title="Defect #14824" rel="popovertitle" data-placement="left" href="/DefectDataBase/defects/view/14824">eeeee</a>			&nbsp;
+
+		</td>
+				
+		<!-- Location/Area -->
+				<td>
+			AJAX Library&nbsp;
+		</td>
+		
+		<!-- Found by user -->
+				<td>
+			Titouan Benoit&nbsp;
+		</td>
+		
+		<!-- Found in build -->
+				<td>
+			dede&nbsp;
+		</td>
+		
+		<!-- Fixed in build -->
+				<td>
+			&nbsp;
+		</td>
+		
+		<!-- Must fix -->
+				<td><div class="center_td"><i class="icon-asterisk"></i> <span class="mustFix">X</span></div>&nbsp;</td>
+		
+		<!-- follow -->
+		<td class="tdactions"><div class="center_td"><a data-url="/DefectDataBase/follows" data-defect="14824" data-user="91" data-id="" alt="follow" title="follow" class="follow_off"></a>
+			
+			
+		</div></td>
+
+		<!-- Actions -->
+				<td class="tdactions">
+			<a data-content="&lt;ul class=&quot;count_misc&quot;&gt;&lt;li&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-file&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-linked-black&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;/ul&gt;Created: 2013-03-06 17:40:00&lt;br /&gt;Modified: 2013-03-06 17:40:00&lt;br /&gt;Fix Confirmed: " data-original-title="Defect #14824" rel="popoverview" data-placement="left" class="btn btn-mini" href="/DefectDataBase/defects/view/14824">View</a>			<a class="btn btn-mini btn-primary" href="/DefectDataBase/defects/update/14824">Update</a>					</td>
+	</tr>
+	<tr class="info">
+
+		<!-- ID -->
+		<td>14823&nbsp;
+		</td>
+
+		<!-- Status -->
+				<td>
+			New&nbsp;
+		</td>
+		
+		<!-- Severity -->
+				<td>
+			Critical&nbsp;
+		</td>
+		
+		<!-- Assigned user -->
+				<td>
+			Alex K&nbsp;
+		</td>
+		
+		<!-- Project -->
+				<td>
+			<a data-original-title="Version: 5.0 Build: dede" rel="tooltip" data-placement="top" href="/DefectDataBase/projects/view/25">A4L-Enterprise</a>&nbsp;
+		</td>
+		
+		<!-- Version -->
+				<td>
+			<a data-original-title="Project: A4L-Enterprise Build: dede" rel="tooltip" data-placement="top" href="/DefectDataBase/versions/view/133">5.0</a>&nbsp;
+		</td>
+		
+		<!-- Title -->
+				<td class="td_title">
+			<a data-content="dfffggg" data-original-title="Defect #14823" rel="popovertitle" data-placement="left" href="/DefectDataBase/defects/view/14823">dede</a>			&nbsp;
+
+		</td>
+				
+		<!-- Location/Area -->
+				<td>
+			Alice installer&nbsp;
+		</td>
+		
+		<!-- Found by user -->
+				<td>
+			Titouan Benoit&nbsp;
+		</td>
+		
+		<!-- Found in build -->
+				<td>
+			dede&nbsp;
+		</td>
+		
+		<!-- Fixed in build -->
+				<td>
+			&nbsp;
+		</td>
+		
+		<!-- Must fix -->
+				<td><div class="center_td"><i class="icon-asterisk"></i> <span class="mustFix">X</span></div>&nbsp;</td>
+		
+		<!-- follow -->
+		<td class="tdactions"><div class="center_td"><a data-url="/DefectDataBase/follows" data-defect="14823" data-user="91" data-id="" alt="follow" title="follow" class="follow_off"></a>
+			
+			
+		</div></td>
+
+		<!-- Actions -->
+				<td class="tdactions">
+			<a data-content="&lt;ul class=&quot;count_misc&quot;&gt;&lt;li&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-file&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-linked-black&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;/ul&gt;Created: 2013-03-06 17:39:18&lt;br /&gt;Modified: 2013-03-06 17:39:18&lt;br /&gt;Fix Confirmed: " data-original-title="Defect #14823" rel="popoverview" data-placement="left" class="btn btn-mini" href="/DefectDataBase/defects/view/14823">View</a>			<a class="btn btn-mini btn-primary" href="/DefectDataBase/defects/update/14823">Update</a>					</td>
+	</tr>
+	<tr class="info">
+
+		<!-- ID -->
+		<td>14822&nbsp;
+		</td>
+
+		<!-- Status -->
+				<td>
+			New&nbsp;
+		</td>
+		
+		<!-- Severity -->
+				<td>
+			Critical&nbsp;
+		</td>
+		
+		<!-- Assigned user -->
+				<td>
+			Alex K&nbsp;
+		</td>
+		
+		<!-- Project -->
+				<td>
+			<a data-original-title="Version: 5.0 Build: dede" rel="tooltip" data-placement="top" href="/DefectDataBase/projects/view/29">Alice Browser Client</a>&nbsp;
+		</td>
+		
+		<!-- Version -->
+				<td>
+			<a data-original-title="Project: Alice Browser Client Build: dede" rel="tooltip" data-placement="top" href="/DefectDataBase/versions/view/134">5.0</a>&nbsp;
+		</td>
+		
+		<!-- Title -->
+				<td class="td_title">
+			<a data-content="1. General Description
+
+
+2. Steps to reproduce" data-original-title="Defect #14822" rel="popovertitle" data-placement="left" href="/DefectDataBase/defects/view/14822">dede</a>			&nbsp;
+
+		</td>
+				
+		<!-- Location/Area -->
+				<td>
+			AJAX Library&nbsp;
+		</td>
+		
+		<!-- Found by user -->
+				<td>
+			Titouan Benoit&nbsp;
+		</td>
+		
+		<!-- Found in build -->
+				<td>
+			dede&nbsp;
+		</td>
+		
+		<!-- Fixed in build -->
+				<td>
+			&nbsp;
+		</td>
+		
+		<!-- Must fix -->
+				<td><div class="center_td"><i class="icon-asterisk"></i> <span class="mustFix">X</span></div>&nbsp;</td>
+		
+		<!-- follow -->
+		<td class="tdactions"><div class="center_td"><a data-url="/DefectDataBase/follows" data-defect="14822" data-user="91" data-id="" alt="follow" title="follow" class="follow_off"></a>
+			
+			
+		</div></td>
+
+		<!-- Actions -->
+				<td class="tdactions">
+			<a data-content="&lt;ul class=&quot;count_misc&quot;&gt;&lt;li&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-file&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-linked-black&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;/ul&gt;Created: 2013-03-06 17:16:20&lt;br /&gt;Modified: 2013-03-06 17:16:20&lt;br /&gt;Fix Confirmed: " data-original-title="Defect #14822" rel="popoverview" data-placement="left" class="btn btn-mini" href="/DefectDataBase/defects/view/14822">View</a>			<a class="btn btn-mini btn-primary" href="/DefectDataBase/defects/update/14822">Update</a>					</td>
+	</tr>
+	<tr class="info">
+
+		<!-- ID -->
+		<td>14821&nbsp;
+		</td>
+
+		<!-- Status -->
+				<td>
+			New&nbsp;
+		</td>
+		
+		<!-- Severity -->
+				<td>
+			Critical&nbsp;
+		</td>
+		
+		<!-- Assigned user -->
+				<td>
+			Gilles Durot&nbsp;
+		</td>
+		
+		<!-- Project -->
+				<td>
+			<a data-original-title="Version: 3.0 Build: de" rel="tooltip" data-placement="top" href="/DefectDataBase/projects/view/1">Defect Database</a>&nbsp;
+		</td>
+		
+		<!-- Version -->
+				<td>
+			<a data-original-title="Project: Defect Database Build: de" rel="tooltip" data-placement="top" href="/DefectDataBase/versions/view/111">3.0</a>&nbsp;
+		</td>
+		
+		<!-- Title -->
+				<td class="td_title">
+			<a data-content="é'&quot;(-'è(_èç-àçè_-('ehdfghfgshsdf&lt;br&gt;dsfsdf&lt;strong&gt;sssss&lt;/strong&gt;
+&amp;quote; dede&amp;quote;" data-original-title="Defect #14821" rel="popovertitle" data-placement="left" href="/DefectDataBase/defects/view/14821">sszdfqsfqsf</a>			&nbsp;
+
+		</td>
+				
+		<!-- Location/Area -->
+				<td>
+			Db&nbsp;
+		</td>
+		
+		<!-- Found by user -->
+				<td>
+			Titouan Benoit&nbsp;
+		</td>
+		
+		<!-- Found in build -->
+				<td>
+			de&nbsp;
+		</td>
+		
+		<!-- Fixed in build -->
+				<td>
+			&nbsp;
+		</td>
+		
+		<!-- Must fix -->
+				<td><div class="center_td"><i class="icon-asterisk"></i> <span class="mustFix">X</span></div>&nbsp;</td>
+		
+		<!-- follow -->
+		<td class="tdactions"><div class="center_td"><a data-url="/DefectDataBase/follows" data-defect="14821" data-user="91" data-id="" alt="follow" title="follow" class="follow_off"></a>
+			
+			
+		</div></td>
+
+		<!-- Actions -->
+				<td class="tdactions">
+			<a data-content="&lt;ul class=&quot;count_misc&quot;&gt;&lt;li&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-file&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-linked-black&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;/ul&gt;Created: 2013-03-01 19:10:28&lt;br /&gt;Modified: 2013-03-01 19:10:28&lt;br /&gt;Fix Confirmed: " data-original-title="Defect #14821" rel="popoverview" data-placement="left" class="btn btn-mini" href="/DefectDataBase/defects/view/14821">View</a>			<a class="btn btn-mini btn-primary" href="/DefectDataBase/defects/update/14821">Update</a>					</td>
+	</tr>
+	<tr class="info">
+
+		<!-- ID -->
+		<td>14820&nbsp;
+		</td>
+
+		<!-- Status -->
+				<td>
+			New&nbsp;
+		</td>
+		
+		<!-- Severity -->
+				<td>
+			Critical&nbsp;
+		</td>
+		
+		<!-- Assigned user -->
+				<td>
+			Alex K&nbsp;
+		</td>
+		
+		<!-- Project -->
+				<td>
+			<a data-original-title="Version: 5.0 Build: ddeeed" rel="tooltip" data-placement="top" href="/DefectDataBase/projects/view/25">A4L-Enterprise</a>&nbsp;
+		</td>
+		
+		<!-- Version -->
+				<td>
+			<a data-original-title="Project: A4L-Enterprise Build: ddeeed" rel="tooltip" data-placement="top" href="/DefectDataBase/versions/view/133">5.0</a>&nbsp;
+		</td>
+		
+		<!-- Title -->
+				<td class="td_title">
+			<a data-content="1. General Description
+
+
+2. Steps to reproduce" data-original-title="Defect #14820" rel="popovertitle" data-placement="left" href="/DefectDataBase/defects/view/14820">dede</a>			&nbsp;
+
+		</td>
+				
+		<!-- Location/Area -->
+				<td>
+			Alice installer&nbsp;
+		</td>
+		
+		<!-- Found by user -->
+				<td>
+			Titouan Benoit&nbsp;
+		</td>
+		
+		<!-- Found in build -->
+				<td>
+			ddeeed&nbsp;
+		</td>
+		
+		<!-- Fixed in build -->
+				<td>
+			&nbsp;
+		</td>
+		
+		<!-- Must fix -->
+				<td><div class="center_td"><i class="icon-asterisk"></i> <span class="mustFix">X</span></div>&nbsp;</td>
+		
+		<!-- follow -->
+		<td class="tdactions"><div class="center_td"><a data-url="/DefectDataBase/follows" data-defect="14820" data-user="91" data-id="" alt="follow" title="follow" class="follow_off"></a>
+			
+			
+		</div></td>
+
+		<!-- Actions -->
+				<td class="tdactions">
+			<a data-content="&lt;ul class=&quot;count_misc&quot;&gt;&lt;li&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-file&quot;&gt;&lt;/i&gt; 2&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-linked-black&quot;&gt;&lt;/i&gt; 3&lt;/li&gt;&lt;/ul&gt;Created: 2013-03-01 17:08:15&lt;br /&gt;Modified: 2013-03-01 17:08:15&lt;br /&gt;Fix Confirmed: " data-original-title="Defect #14820" rel="popoverview" data-placement="left" class="btn btn-mini" href="/DefectDataBase/defects/view/14820">View</a>			<a class="btn btn-mini btn-primary" href="/DefectDataBase/defects/update/14820">Update</a>					</td>
+	</tr>
+	<tr>
+
+		<!-- ID -->
+		<td><a data-original-title="Linked Defects &lt;a class=&quot;close&quot; data-toggle=&quot;button&quot; data-dismiss=&quot;clickover&quot; href=&quot;#&quot;&gt;×&lt;/a&gt;" data-toggle="popover" data-placement="right" data-content="&lt;div id=&quot;linked-view&quot;&gt;&lt;ul&gt;&lt;li class=&quot;linked_cat&quot;&gt;refered back&lt;/li&gt;&lt;li&gt; &lt;a data-placement=&quot;right\&quot; rel=&quot;tooltip&quot; data-original-title=&quot;created at 2013-03-01 22:34:34&quot; href=&quot;http://localhost/DefectDataBase/defects/view/14818&quot;&gt;14818&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" title="" class="pointedLink" href="#">14819 <i class="icon-linked-return"></i></a>&nbsp;
+		</td>
+
+		<!-- Status -->
+				<td>
+			New&nbsp;
+		</td>
+		
+		<!-- Severity -->
+				<td>
+			Minor&nbsp;
+		</td>
+		
+		<!-- Assigned user -->
+				<td>
+			Jacqueline Bruner&nbsp;
+		</td>
+		
+		<!-- Project -->
+				<td>
+			<a data-original-title="Version: 5.2 Build: dede" rel="tooltip" data-placement="top" href="/DefectDataBase/projects/view/35">A4L - 5</a>&nbsp;
+		</td>
+		
+		<!-- Version -->
+				<td>
+			<a data-original-title="Project: A4L - 5 Build: dede" rel="tooltip" data-placement="top" href="/DefectDataBase/versions/view/140">5.2</a>&nbsp;
+		</td>
+		
+		<!-- Title -->
+				<td class="td_title">
+			<a data-content="1. General Description
+
+
+2. Steps to reproduce" data-original-title="Defect #14819" rel="popovertitle" data-placement="left" href="/DefectDataBase/defects/view/14819">dede</a>			&nbsp;
+
+		</td>
+				
+		<!-- Location/Area -->
+				<td>
+			C# Alice connectivity&nbsp;
+		</td>
+		
+		<!-- Found by user -->
+				<td>
+			Titouan Benoit&nbsp;
+		</td>
+		
+		<!-- Found in build -->
+				<td>
+			dede&nbsp;
+		</td>
+		
+		<!-- Fixed in build -->
+				<td>
+			&nbsp;
+		</td>
+		
+		<!-- Must fix -->
+				<td><div class="center_td"></div>&nbsp;</td>
+		
+		<!-- follow -->
+		<td class="tdactions"><div class="center_td"><a data-url="/DefectDataBase/follows" data-defect="14819" data-user="91" data-id="" alt="follow" title="follow" class="follow_off"></a>
+			
+			
+		</div></td>
+
+		<!-- Actions -->
+				<td class="tdactions">
+			<a data-content="&lt;ul class=&quot;count_misc&quot;&gt;&lt;li&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; 1&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-file&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-linked-black&quot;&gt;&lt;/i&gt; 2&lt;/li&gt;&lt;/ul&gt;Created: 2013-03-01 17:05:00&lt;br /&gt;Modified: 2013-03-01 17:05:00&lt;br /&gt;Fix Confirmed: " data-original-title="Defect #14819" rel="popoverview" data-placement="left" class="btn btn-mini" href="/DefectDataBase/defects/view/14819">View</a>			<a class="btn btn-mini btn-primary" href="/DefectDataBase/defects/update/14819">Update</a>					</td>
+	</tr>
+	<tr class="info">
+
+		<!-- ID -->
+		<td><a data-original-title="Linked Defects &lt;a class=&quot;close&quot; data-toggle=&quot;button&quot; data-dismiss=&quot;clickover&quot; href=&quot;#&quot;&gt;×&lt;/a&gt;" data-toggle="popover" data-placement="right" data-content="&lt;div id=&quot;linked-view&quot;&gt;&lt;ul&gt;&lt;li class=&quot;linked_cat&quot;&gt;refered back&lt;/li&gt;&lt;li&gt; &lt;a data-placement=&quot;right\&quot; rel=&quot;tooltip&quot; data-original-title=&quot;created at 2013-02-28 16:44:00&quot; href=&quot;http://localhost/DefectDataBase/defects/view/14817&quot;&gt;14817&lt;/a&gt;&lt;/li&gt;&lt;li&gt; &lt;a data-placement=&quot;right\&quot; rel=&quot;tooltip&quot; data-original-title=&quot;created at 2013-02-28 19:14:52&quot; href=&quot;http://localhost/DefectDataBase/defects/view/14801&quot;&gt;14801&lt;/a&gt;&lt;/li&gt;&lt;li&gt; &lt;a data-placement=&quot;right\&quot; rel=&quot;tooltip&quot; data-original-title=&quot;created at 2013-03-01 22:33:46&quot; href=&quot;http://localhost/DefectDataBase/defects/view/14819&quot;&gt;14819&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" title="" class="pointedLink" href="#">14818 <i class="icon-linked-return"></i></a>&nbsp;
+		</td>
+
+		<!-- Status -->
+				<td>
+			New&nbsp;
+		</td>
+		
+		<!-- Severity -->
+				<td>
+			Critical&nbsp;
+		</td>
+		
+		<!-- Assigned user -->
+				<td>
+			Alex K&nbsp;
+		</td>
+		
+		<!-- Project -->
+				<td>
+			<a data-original-title="Version: 5.0 Build: erztyry" rel="tooltip" data-placement="top" href="/DefectDataBase/projects/view/29">Alice Browser Client</a>&nbsp;
+		</td>
+		
+		<!-- Version -->
+				<td>
+			<a data-original-title="Project: Alice Browser Client Build: erztyry" rel="tooltip" data-placement="top" href="/DefectDataBase/versions/view/134">5.0</a>&nbsp;
+		</td>
+		
+		<!-- Title -->
+				<td class="td_title">
+			<a data-content="1. General Description
+
+
+2. Steps to reproduce" data-original-title="Defect #14818" rel="popovertitle" data-placement="left" href="/DefectDataBase/defects/view/14818">dsfgf</a>			&nbsp;
+
+		</td>
+				
+		<!-- Location/Area -->
+				<td>
+			AJAX Library&nbsp;
+		</td>
+		
+		<!-- Found by user -->
+				<td>
+			Titouan Benoit&nbsp;
+		</td>
+		
+		<!-- Found in build -->
+				<td>
+			erztyry&nbsp;
+		</td>
+		
+		<!-- Fixed in build -->
+				<td>
+			&nbsp;
+		</td>
+		
+		<!-- Must fix -->
+				<td><div class="center_td"><i class="icon-asterisk"></i> <span class="mustFix">X</span></div>&nbsp;</td>
+		
+		<!-- follow -->
+		<td class="tdactions"><div class="center_td"><a data-url="/DefectDataBase/follows" data-defect="14818" data-user="91" data-id="" alt="follow" title="follow" class="follow_off"></a>
+			
+			
+		</div></td>
+
+		<!-- Actions -->
+				<td class="tdactions">
+			<a data-content="&lt;ul class=&quot;count_misc&quot;&gt;&lt;li&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; 1&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-file&quot;&gt;&lt;/i&gt; 1&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-linked-black&quot;&gt;&lt;/i&gt; 3&lt;/li&gt;&lt;/ul&gt;Created: 2013-02-28 15:14:22&lt;br /&gt;Modified: 2013-03-06 19:05:26&lt;br /&gt;Fix Confirmed: " data-original-title="Defect #14818" rel="popoverview" data-placement="left" class="btn btn-mini" href="/DefectDataBase/defects/view/14818">View</a>			<a class="btn btn-mini btn-primary" href="/DefectDataBase/defects/update/14818">Update</a>					</td>
+	</tr>
+	<tr class="info">
+
+		<!-- ID -->
+		<td>14817&nbsp;
+		</td>
+
+		<!-- Status -->
+				<td>
+			New&nbsp;
+		</td>
+		
+		<!-- Severity -->
+				<td>
+			Critical&nbsp;
+		</td>
+		
+		<!-- Assigned user -->
+				<td>
+			Alex K&nbsp;
+		</td>
+		
+		<!-- Project -->
+				<td>
+			<a data-original-title="Version: 5.0 Build: de" rel="tooltip" data-placement="top" href="/DefectDataBase/projects/view/29">Alice Browser Client</a>&nbsp;
+		</td>
+		
+		<!-- Version -->
+				<td>
+			<a data-original-title="Project: Alice Browser Client Build: de" rel="tooltip" data-placement="top" href="/DefectDataBase/versions/view/134">5.0</a>&nbsp;
+		</td>
+		
+		<!-- Title -->
+				<td class="td_title">
+			<a data-content="dghfghjlkmklùjgh" data-original-title="Defect #14817" rel="popovertitle" data-placement="left" href="/DefectDataBase/defects/view/14817">dsfghjh</a>			&nbsp;
+
+		</td>
+				
+		<!-- Location/Area -->
+				<td>
+			AJAX Library&nbsp;
+		</td>
+		
+		<!-- Found by user -->
+				<td>
+			Titouan Benoit&nbsp;
+		</td>
+		
+		<!-- Found in build -->
+				<td>
+			de&nbsp;
+		</td>
+		
+		<!-- Fixed in build -->
+				<td>
+			&nbsp;
+		</td>
+		
+		<!-- Must fix -->
+				<td><div class="center_td"><i class="icon-asterisk"></i> <span class="mustFix">X</span></div>&nbsp;</td>
+		
+		<!-- follow -->
+		<td class="tdactions"><div class="center_td"><a data-url="/DefectDataBase/follows" data-defect="14817" data-user="91" data-id="" alt="follow" title="follow" class="follow_off"></a>
+			
+			
+		</div></td>
+
+		<!-- Actions -->
+				<td class="tdactions">
+			<a data-content="&lt;ul class=&quot;count_misc&quot;&gt;&lt;li&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-file&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-linked-black&quot;&gt;&lt;/i&gt; 7&lt;/li&gt;&lt;/ul&gt;Created: 2013-02-28 15:13:41&lt;br /&gt;Modified: 2013-02-28 15:13:41&lt;br /&gt;Fix Confirmed: " data-original-title="Defect #14817" rel="popoverview" data-placement="left" class="btn btn-mini" href="/DefectDataBase/defects/view/14817">View</a>			<a class="btn btn-mini btn-primary" href="/DefectDataBase/defects/update/14817">Update</a>					</td>
+	</tr>
+	<tr class="info">
+
+		<!-- ID -->
+		<td>14816&nbsp;
+		</td>
+
+		<!-- Status -->
+				<td>
+			New&nbsp;
+		</td>
+		
+		<!-- Severity -->
+				<td>
+			Critical&nbsp;
+		</td>
+		
+		<!-- Assigned user -->
+				<td>
+			Alex K&nbsp;
+		</td>
+		
+		<!-- Project -->
+				<td>
+			<a data-original-title="Version: 5.0 Build: de" rel="tooltip" data-placement="top" href="/DefectDataBase/projects/view/29">Alice Browser Client</a>&nbsp;
+		</td>
+		
+		<!-- Version -->
+				<td>
+			<a data-original-title="Project: Alice Browser Client Build: de" rel="tooltip" data-placement="top" href="/DefectDataBase/versions/view/134">5.0</a>&nbsp;
+		</td>
+		
+		<!-- Title -->
+				<td class="td_title">
+			<a data-content="dghfghjlkmklùjgh" data-original-title="Defect #14816" rel="popovertitle" data-placement="left" href="/DefectDataBase/defects/view/14816">dsfghjh</a>			&nbsp;
+
+		</td>
+				
+		<!-- Location/Area -->
+				<td>
+			AJAX Library&nbsp;
+		</td>
+		
+		<!-- Found by user -->
+				<td>
+			Titouan Benoit&nbsp;
+		</td>
+		
+		<!-- Found in build -->
+				<td>
+			de&nbsp;
+		</td>
+		
+		<!-- Fixed in build -->
+				<td>
+			&nbsp;
+		</td>
+		
+		<!-- Must fix -->
+				<td><div class="center_td"><i class="icon-asterisk"></i> <span class="mustFix">X</span></div>&nbsp;</td>
+		
+		<!-- follow -->
+		<td class="tdactions"><div class="center_td"><a data-url="/DefectDataBase/follows" data-defect="14816" data-user="91" data-id="" alt="follow" title="follow" class="follow_off"></a>
+			
+			
+		</div></td>
+
+		<!-- Actions -->
+				<td class="tdactions">
+			<a data-content="&lt;ul class=&quot;count_misc&quot;&gt;&lt;li&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-file&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;icon-linked-black&quot;&gt;&lt;/i&gt; 0&lt;/li&gt;&lt;/ul&gt;Created: 2013-02-28 15:13:32&lt;br /&gt;Modified: 2013-02-28 15:13:32&lt;br /&gt;Fix Confirmed: " data-original-title="Defect #14816" rel="popoverview" data-placement="left" class="btn btn-mini" href="/DefectDataBase/defects/view/14816">View</a>			<a class="btn btn-mini btn-primary" href="/DefectDataBase/defects/update/14816">Update</a>					</td>
+	</tr>
+	</tbody></table>
+
+	<div class="paging">
+	<span class="prev disabled">&lt; previous</span><span class="current">1</span><span><a href="/DefectDataBase/defects/index/sort:project_title/direction:asc/page:2">2</a></span><span><a href="/DefectDataBase/defects/index/sort:project_title/direction:asc/page:3">3</a></span><span><a href="/DefectDataBase/defects/index/sort:project_title/direction:asc/page:4">4</a></span><span><a href="/DefectDataBase/defects/index/sort:project_title/direction:asc/page:5">5</a></span><span><a href="/DefectDataBase/defects/index/sort:project_title/direction:asc/page:6">6</a></span><span><a href="/DefectDataBase/defects/index/sort:project_title/direction:asc/page:7">7</a></span><span><a href="/DefectDataBase/defects/index/sort:project_title/direction:asc/page:8">8</a></span><span><a href="/DefectDataBase/defects/index/sort:project_title/direction:asc/page:9">9</a></span><span><a rel="last" href="/DefectDataBase/defects/index/sort:project_title/direction:asc/page:1480">last &gt;&gt;</a></span><span class="next"><a rel="next" href="/DefectDataBase/defects/index/sort:project_title/direction:asc/page:2">next &gt;</a></span>	</div>
+	</span>
+	</div>
+</section>
+</div>
+<div class="footer-fix"></div>
+<footer><p>&copy; 2013 - Lacerta Panel - Nightbringer</p></footer>
+</body>
+</html>

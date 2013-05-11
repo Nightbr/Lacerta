@@ -1,0 +1,507 @@
+/*                                                                                             
+               s@@                                                                                          
+                rA@5   B@;                                                                                  
+             s@@.  @S @G5@                 ,.                                                               
+           r@@@@@@s@S .;    ,r293#@X       @@&                                         rh                   
+             H@@@@@@@@:.  .,..    r@@X     @@S        :;.        ::     :;     .   ,  @@@.    ,;:           
+                 i@@@@@@. :@        ,@@    @@s      @@@@@@9   @@@@@@  @@@@@@. :@@@@@ @@@@@@  @@@@@@         
+            ,S@, @@M@@@@@#@@@H@@;    G@X   @@s        ;2@@@  @@@     @@@  @@@  @@@    5@@     .sA@@@        
+             29iiX  :@@@@@@  ;r.;    9@:   @@r      @@#:i@@  @@G     @@@H#AA@  @@     S@@   3@@S.@@@        
+                    5#@ r@@r         @@    @@@rS52 3@@  3@@  &@@G.,. #@@       @@,    i@@i. @@@  @@@        
+                   :@@    @@@2     :@@,    @@@@@@@. G@@@5@@   ,@@@@@  :@@@@@;  @@,     A@@@  @@@M9@@        
+                  S@@r      B@@@@@@@S                                                                       
+                               .;;                                                                          */
+
+@import "compass";
+@import "variables";
+/*@import "icons/*.png";*/
+
+body {
+	background-image: image-url('bg4.jpg');/*image-url('bg.png');*/
+	background-attachment: fixed;
+	margin: 0px;
+	padding: 0px;
+	font-family: "ProximaNova",sans-serif;
+	color: $body_font_color;
+	padding-top: 50px;
+	padding-right: $notification_center_width;/*padding for the notification center */
+	margin-bottom: $footer_height;
+	text-align: center;
+}
+
+/*top bar header *********************************************/
+
+.top_bar {
+	display: block;
+	position: fixed;
+	z-index: 1000;
+	text-align: left;
+	top: 0;
+	left: 0;
+	min-height: 40px;
+	width: 100%;
+	color: white;
+	background-color: $top_bar_color;
+	@include background(linear-gradient(bottom, $top_bar_color, lighten($top_bar_color, 10%)));
+	border-bottom: 1px solid darken($top_bar_color, 60%);
+	@include box-shadow(darken($top_bar_color, 70%) 0 0 1px);
+
+	h1.logo {
+		display: block;
+		float: left;
+		font-size: 15pt;
+		font-family: "Myriad Pro",sans-serif;
+		color: white;
+		padding:0;
+		margin:0;
+		padding-top: 5px;
+		padding-left: 25px;
+		@include single-text-shadow(0px, 1px, 1px, false, black);
+	}
+
+	nav, a {
+		float: left;
+		margin: 0;
+		padding: 0;
+		font-size: 11pt;
+		text-decoration: none;
+	}
+
+	nav {
+		border-left: 1px solid rgba(0, 0, 0, 0.4);
+		border-right: 1px solid rgba(255,255,255,0.05);
+		margin-left: 25px;
+	}
+
+	a {
+		color: rgba(255,255,255,0.7);	
+		height: 30px;
+		padding-top: 9px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border-left: 1px solid rgba(255,255,255,0.05);
+		border-right: 1px solid rgba(0, 0, 0, 0.4);
+		@include single-text-shadow(0px, -1px, 1px, false, black);
+		&:hover{
+			color: rgba(255,255,255,1);
+			border-bottom: 2px solid rgba(255,255,255,0.7);
+		}
+	}
+
+	.current {
+		border-bottom: 2px solid rgba(255,255,255,0.5);
+	}
+
+	.user_wrap {
+		float: right;
+		font-size: 11pt;
+		border-left: 1px solid rgba(0, 0, 0, 0.4);
+		border-right: 1px solid rgba(255,255,255,0.05);
+	}
+
+}
+.header-fix {
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+}
+/*Notification center **************************************/
+#notification_center {
+	display: block;
+	position: fixed;
+	text-align: left;
+	z-index: 80;
+	right: 0;
+	top: 40px;
+	height: 100%;
+	width: $notification_center_width;
+	background: black;
+	@include background(linear-gradient(left, $top_bar_color, lighten($top_bar_color, 5%)));
+	border-left: 1px solid darken($top_bar_color, 20%);
+	@include box-shadow(rgba( 0, 0, 0, 0.5) 0 0 5px, rgba( 255, 255, 255, 0.2) -1px 0 0);
+	@include single-text-shadow(0px, 1px, 0px, false,  rgba( 255, 255, 255, 0.2));
+
+	ul, li {
+		margin:0;
+		padding: 0;
+		list-style: none;
+		margin-left: 1px;
+	}
+
+
+/*notification style */
+
+@mixin notifStyle($color: #989898){
+	@include background-image( linear-gradient(top,$color,darken($color,10)) );
+	@include box-shadow(inset 0px 1px 1px lighten($color,20));
+	border: solid 1px darken($color,20);
+}
+
+	li {
+		width: 43px;
+		height: 43px;
+		margin-top: 3px;
+		@include border-radius(5px);
+		outline: none;
+		text-align: center;
+
+		@include notifStyle();
+
+		&.notif-danger {
+			@include notifStyle(#E00404);
+		}
+		&.notif-warning {
+			@include notifStyle(#F89407);
+		}
+		&.notif-success {
+			@include notifStyle(#3FAD00);
+		}
+		&.notif-info {
+			@include notifStyle(#00A6E3);
+		}
+		
+		
+
+		a {
+			display: block;
+			width: 44px;
+			height: 44px;
+			color: rgba(255,255,255,0.5);
+			font-size: 20px;
+			line-height: 44px;
+			&:hover {
+				color: rgba(255,255,255,1);
+			}
+		}
+
+
+	}
+}
+
+/*footer ***************************************************/
+footer {
+	position: fixed;
+	clear: both;
+	text-align: left;
+	z-index: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: $footer_height;
+	left: 0;
+	bottom: 0;
+	padding-bottom: 5px;
+	@include single-text-shadow(0px, -1px, 1px, false, black);
+	@include opacity(0.7);
+
+	p {
+		margin: 0;
+		padding: 0;
+		margin-left: 10px;
+	}
+}
+.footer-fix {
+	display: block;
+	clear: both;
+	width: 100%;
+	height: $footer_height;
+}
+
+/*login page ***********************************************/
+.login-area {
+	display: block;
+	margin: auto;
+	width: 350px;
+	text-align: left;
+	margin-top: 10%;
+	padding: 12px;
+	background: rgba(255,255,255,0.7);
+	color: $body_font_color;
+	@include border-radius;
+	@include box-shadow(rgba(0,0,0,0.5) 0 0 5px);
+	@include single-text-shadow(0px, 1px, 1px, false, rgba(0,0,0,0.5));
+	
+	h1 {
+		margin:0;
+		padding: 0;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+
+	form {
+		margin:0;
+		padding: 0;
+		border-top: 1px solid rgba(255,255,255,0.7);
+		padding-top: 10px;
+	}
+}
+
+/*grid system & block **********************************************/
+
+/*responsive design in %*/
+.container-fluid {
+	width: 100%;
+	text-align: left;
+
+	$columns: 12;
+	$total_width: 100%;
+	$marge: 1%;
+	.grid {
+		margin: 0 $marge;
+		margin-top: 1%;
+		/*background-color: blue;*/
+	}
+
+	@for $i from 1 to $columns+1{
+		.grid#{$i} {
+			@extend .grid;
+			width: $i*$total_width/$columns - 2*$marge;
+		}
+
+	}
+}
+/*fixed structure grid optimized for 1444*900 resolution 
+but you can change easily the width in variables.scss: $container_fixed_width*/
+.container-fixed {
+	width: $container_fixed_width;
+	text-align: left;
+	margin: auto;
+	background-color: blue;
+
+	$columns: 12;
+	$total_width: $container_fixed_width;
+	$marge: 10px;
+	.grid {
+		margin: 0 $marge;
+		margin-top: 10px;
+		/*background-color: blue;*/
+	}
+
+	@for $i from 1 to $columns+1{
+		.grid#{$i} {
+			@extend .grid;
+			width: $i*$total_width/$columns - 2*$marge;
+		}
+
+	}
+}
+
+.block {
+	display: block;
+	position: relative;
+	float: left;
+	text-align: left;
+	font-size: 10pt;
+	@include box-shadow(rgba(0,0,0,0.5) 0 0 5px 1px);
+
+	.title {
+		color: white;
+		padding-left: 10px;
+		padding-top: 3px;
+		height: 24px;
+		background-color: $top_bar_color;
+		@include background(linear-gradient(bottom, $top_bar_color, lighten($top_bar_color, 10%)));
+		border-bottom: 1px solid darken($top_bar_color, 60%);
+		@include box-shadow(darken($top_bar_color, 70%) 0 0 1px);
+		@include single-text-shadow(0px, -1px, 1px, false, black);
+		font-size: 11pt;
+	}
+
+	.content {
+		display: block;
+		background-color: #EEEEEE;
+		border: 1px solid $top_bar_color;
+		border-top: 0;
+		overflow: auto;
+		
+
+		span {
+			display: block;
+			padding: 10px;/*for fix jumping jQuery slideToggle();*/
+
+		}
+	}
+
+	.toggle_block {
+		float: right;
+		margin-right: 5px;
+		color: rgba(255,255,255,0.7);
+		&:hover {
+			color: rgba(255,255,255,1);
+		}
+	}
+
+	strong {
+		color: darken($body_font_color, 30%);
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		margin: 0;
+	}
+	h1 {
+		color: darken($body_font_color, 30%);
+		margin: 2px;
+		margin-left: 0;
+	}
+	h2 {
+		color: darken($body_font_color, 20%);
+		margin: 1px;
+		margin-left: 0;
+	}
+	h3 {
+		color: darken($body_font_color, 10%);
+	}
+
+}
+/*button style****************************************************/
+
+a.button {
+	display: inline-block;
+	position:relative;
+	padding:10px;
+	margin-right: 5px;
+	margin-top: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+    text-decoration:none;
+	color: rgba(255, 255, 255, 0.8);	
+	@include border-radius(5px);
+
+	&:hover{
+		color: rgba(255, 255, 255, 1);	
+	}
+
+	[class^="icon-"]:before, [class*=" icon-"]:before {
+		margin-left: 0;
+	}
+}
+
+@mixin buttonStyle($color: #989898){
+	@extend a.button;
+	background-color:$color;
+	border: solid 1px darken($color,20);
+	@include background-image( linear-gradient(top,$color,darken($color,10)) );
+	@include box-shadow(inset 0px 1px 1px lighten($color,20));
+}
+
+@mixin buttonStyleActive($color: #989898){
+	@include background-image( linear-gradient(bottom,$color,darken($color,10)) );
+}
+
+a.btn {
+	@include buttonStyle();
+	&:active{
+		@include buttonStyleActive();
+	}
+}
+
+a.btn-black {
+	@include buttonStyle(#211E1E);
+	&:active{
+		@include buttonStyleActive(#211E1E);
+	}
+}
+
+a.btn-blue {
+	@include buttonStyle(#00A6E3);
+	&:active{
+		@include buttonStyleActive(#00A6E3);
+	}
+}
+
+a.btn-green {
+	@include buttonStyle(#3FAD00);
+	&:active{
+		@include buttonStyleActive(#3FAD00);
+	}
+}
+
+a.btn-yellow {
+	@include buttonStyle(#F89406);
+	&:active{
+		@include buttonStyleActive(#F89406);
+	}
+}
+
+a.btn-red {
+	@include buttonStyle(#E00404);
+	&:active{
+		@include buttonStyleActive(#E00404);
+	}
+}
+
+a.btn-bordered {
+	margin: 13px;
+	&::before{
+		background-color:#ccd0d5;
+		content:"";
+		display:block;
+		position:absolute;
+		top:-8px;
+		left:-8px;
+		width:100%;
+		height:100%;
+		padding:8px;
+		border-radius: 5px;
+		z-index: -1;
+		@include box-shadow(inset 0px 1px 1px #909193,0px 1px 0px #fff);
+	}
+}
+
+/*social button ***************************************************/
+a.btn-round {
+	margin-right: 13px;
+	margin-bottom: 13px;
+	margin-left: 8px;
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+	position: relative;
+	line-height: 64px;
+	font-size: 32px;
+	text-align: center;
+	color: #CDCDCD;
+	background-color: #eaeaea;
+	@include background-image(linear-gradient(top,#f6f6f6,#eaeaea));
+	@include border-radius(32px);
+	@include box-shadow(0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .1));
+	@include text-shadow(0px -1px 0px rgba(0, 0, 0, .4), 0px 1px 0px rgba(255, 255, 255, 1));
+
+	&:hover{
+		color: #B3B3B3;
+		@include text-shadow(0px -1px 0px rgba(0, 0, 0, .4), 0px 1px 0px rgba(255, 255, 255, 1));
+
+	}
+
+	&:active{
+		top: 1px;
+		@include background-image(linear-gradient(bottom,#f6f6f6,#eaeaea));
+	}
+
+	&::before{
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: -8px;
+		right: -8px;
+		bottom: -8px;
+		left: -8px;
+		background-color: blue;
+		@include border-radius(140px);
+		opacity: 0.5;		
+	}
+}
+
+
+/*tools **********************************************************/
+.center {
+	text-align: center;/*don't forget using margin: auto; on child */
+}
+.clear-left {
+	clear: left;
+}
+.clear-right {
+	clear: right;
+}
+.clear-both {
+	clear: both;
+}
